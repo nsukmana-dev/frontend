@@ -46,12 +46,18 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/auth-next',
+    '@nuxtjs/auth',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:8080/',
+    proxy: true,
+    // baseURL: 'http://localhost:8080/'
+  },
+
+  
+  proxy: {
+    '/api/': { target: 'http://localhost:8080/', pathRewrite: {'^/api/': '/api/'}, changeOrigin: true }
   },
 
   auth: {

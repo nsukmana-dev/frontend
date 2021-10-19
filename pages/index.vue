@@ -102,7 +102,7 @@
           <div class="item">
             <figure class="item-image">
               <img
-                :src="$axios.defaults.baseURL + campaign.image_url"
+                :src="'http://localhost:8080/' + campaign.image_url"
                 alt=""
                 class="rounded-20 w-full h-48"
               />
