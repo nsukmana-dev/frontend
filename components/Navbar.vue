@@ -36,7 +36,7 @@
         
         <div class="flex mx-auto" v-if="this.$auth.loggedIn">
             <div class="dropdown inline-block relative z-10">
-                <button class="bg-white text-grey-700 font-semibold py-2 px-3 rounded inline-flex in">
+                <button class="bg-white text-grey-700 font-semibold py-2 px-6 rounded inline-flex in">
                     <img 
                         v-if="$store.state.auth.user.image_url"
                         :src="'http://localhost:8080/' + $store.state.auth.user.image_url " 
