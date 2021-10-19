@@ -130,7 +130,10 @@
               </div>
             </div>
             <button
-              @click="$router.push({name:'project-id', params:{id: campaign.id}})"
+              @click="$router.push({
+                name:'projects-id', 
+                params:{id: campaign.id},
+              })"
               class="text-center mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"
             >
               Fund Now
