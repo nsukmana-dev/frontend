@@ -38,6 +38,11 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // Simple usage
+    '@nuxtjs/date-fns',
+
+    // With options
+    ['@nuxtjs/date-fns', { /* module options */ }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
