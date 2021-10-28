@@ -45,7 +45,7 @@
                 </div>
                 <p class="text-sm text-gray-600 flex items-center mb-2">
                   Rp. {{ new Intl.NumberFormat().format(transaction.amount) }} 
-                  &middot; <span class="text-blue-400">{{ $dateFns.format(transaction.created_at, 'yyyy-MM-dd hh:mm:ii') }}</span>
+                  &middot; <span class="text-blue-400">{{ $dateFns.format(transaction.created_at, 'dd MMM Y hh:mm:ii') }}</span>
                   &middot; {{transaction.status}}
                 </p>
               </div>
